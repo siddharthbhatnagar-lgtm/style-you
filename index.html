@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; connect-src 'self' data: https://api.open-meteo.com https://geocoding-api.open-meteo.com; media-src 'self' blob:; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Style You</title>
+  <meta name="description" content="Outfits from your own wardrobe every day, and full looks for occasions — styled by your own Gemini or ChatGPT.">
+  <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Style You">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div id="update" class="update" role="status" hidden></div>
+  <div class="no-storage-banner" role="alert">This browser is not saving anything (private mode or storage blocked). Changes are lost when you close it.</div>
+  <main id="view" tabindex="-1"><div class="page"><div class="skeleton"></div></div></main>
+  <nav id="nav" aria-label="Main"></nav>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <noscript><p style="padding:24px;font-family:sans-serif">Style You needs JavaScript turned on.</p></noscript>
+</body>
+</html>
